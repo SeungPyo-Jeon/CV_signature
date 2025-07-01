@@ -72,11 +72,11 @@ def main():
     st.title("Image Retrieval with DINOv2")
     st.set_page_config(layout="wide")
     cwd = os.getcwd()
-    root_dir = os.path.join(cwd, "COCO-128-2/train")
+    root_dir = os.path.join(cwd, "2d_Computer_Vision/image_retireval_DINOv2/COCO-128-2/train")
     train_files = os.listdir(root_dir)
     train_files = [ os.path.join(root_dir, f) for f in train_files if f.lower().endswith(('.jpg', '.jpeg', '.png')) ]
     
-    root_dir = os.path.join(cwd, "COCO-128-2/test")
+    root_dir = os.path.join(cwd, "2d_Computer_Vision/image_retireval_DINOv2/COCO-128-2/test")
     test_files = os.listdir(root_dir)
     test_files = [ os.path.join(root_dir, f) for f in test_files if f.lower().endswith(('.jpg', '.jpeg', '.png')) ]
     
