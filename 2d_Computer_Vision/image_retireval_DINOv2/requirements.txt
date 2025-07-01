@@ -4,6 +4,5 @@ opencv-python-headless
 torch
 faiss-cpu
 streamlit_image_select
-json
 tqdm
 pillow
