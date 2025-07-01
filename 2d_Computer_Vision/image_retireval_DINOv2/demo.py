@@ -49,7 +49,7 @@ def display_layout( train_files, test_files ):
         with st.spinner("Loading images..."):
             st.write("## Images in DB")
             result_container = st.container( height=300, border=True)
-            recognition_result_container = result_container.columns(10)
+            recognition_result_container = result_container.columns(5)
 
             for i, f in enumerate(train_files):
                 recognition_result_container[i % 5].image(f, use_container_width=True)
