@@ -6,3 +6,4 @@ faiss-cpu
 streamlit_image_select
 tqdm
 pillow
+torchvision
