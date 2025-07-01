@@ -52,7 +52,7 @@ def display_layout( train_files, test_files ):
             recognition_result_container = result_container.columns(10)
 
             for i, f in enumerate(train_files):
-                recognition_result_container[i % 10].image(f, use_container_width=True)
+                recognition_result_container[i % 5].image(f, use_container_width=True)
     return selected_img, input_image
 
 def display_smiliar_images( input_image, train_files, data_index, dinov2_vits14 , device="cpu" ):
