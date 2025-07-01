@@ -87,7 +87,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     dinov2_vits14.to(device)
     
-    data_index = faiss.read_index("data.bin")
+    data_index = faiss.read_index(os.path.join(cwd,"2d_Computer_Vision/image_retireval_DINOv2/data.bin"))
     
     if selected_img:
         print(f"Selected image index: {selected_img}")
